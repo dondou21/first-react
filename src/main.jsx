@@ -4,13 +4,24 @@ import reactLogo from './react.png';
 import './index.css'
 import App from './App.jsx'
 
-const root = createRoot(document.getElementById("root"))
+const root = createRoot(document.getElementById("root"));
 
 root.render(
-  
-  <div>
-    <img src={reactLogo} alt="React Logo" />
-    <h1>Hello</h1>
+  <main>
+    <div >
+          <img className='logo' src={reactLogo} alt="react-logo" srcset="" />
+          <h2>ReactFact</h2>
+    </div>
 
-  </div>
+    <div>
+      <h1>Fun facts about React</h1>
+      <ul>
+        <li>Was first released in 2013</li>
+        <li>Was originally created by Jordan Walke</li>
+        <li>Has well over 200k stars on GitHub</li>
+        <li>Is maintained by Meta</li>
+        <li>Powers thousands of entreprise apps, including mobils apps</li>
+      </ul>
+    </div>
+  </main>
 )
