@@ -7,7 +7,15 @@ import App from './App.jsx'
 const root = createRoot(document.getElementById("root"));
 
 root.render(
-  <main>
+  <>
+    <TempName />
+    <Page />
+  </>
+)
+
+function TempName() {
+  return (
+    <main>
     <div >
           <img className='logo' src={reactLogo} alt="react-logo" srcset="" />
           <h2>ReactFact</h2>
@@ -24,4 +32,21 @@ root.render(
       </ul>
     </div>
   </main>
-)
+  )
+}
+
+function Page() {
+  return (
+    <div>
+      <h1>My list</h1>
+      <ul>
+        <li>I wantto learn more about React</li>
+        <li>Build my coding skill</li>
+        <li>Be full stack developper</li>
+      </ul>
+    </div>
+  );
+}
+
+export default Page;
+export { TempName };
