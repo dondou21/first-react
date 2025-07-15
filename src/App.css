@@ -27,3 +27,28 @@ header > img {
 header > h1 {
   color: white;
 }
+
+main.journal-entry {
+  display: flex;
+}
+
+main.journal-entry .marker {
+  width: 18px;
+  margin-right: 4px;
+}
+
+
+main.journal-entry .main-image-container {
+  width: 125px;
+  height: 168px;
+  overflow: hidden;
+  border-radius: 5px;
+  flex-shrink: 0;
+  margin-right: 19px;
+
+}
+
+main.journal-entry .main-image {
+  width: 100%;
+  height: 100%
+}
