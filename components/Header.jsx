@@ -1,9 +1,9 @@
-
+import logo from "../images/chef_logo.png"
 export default function Header() {
     return (
         <header>
-            <img src="./earth.png" alt="Global-Earth"  />
-            <h1>My Travel Journal</h1>
+            <img className="logo-image" src={logo} alt="Chef-Logo" />
+            <span>Chef Claude</span>
         </header>
     )
 }
