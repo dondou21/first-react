@@ -2,9 +2,9 @@ import React from "react"
 
 export default function Main() {
 
-    const[ ingredients, setIngredients] = React.useState(["Chicken", "Oregano", "Tomatoes"])
+    const[ ingredients, setIngredients] = React.useState([])
 
-    const ingredientLisstItems = ingredients.map(ingredient => (
+    const ingredientListItems = ingredients.map(ingredient => (
     <li key={ingredient}>{ingredient}</li>
     ))
 
@@ -27,9 +27,20 @@ export default function Main() {
                 />
                 <button type="submit">Add ingredient</button>
             </form>
-            <ul>
-                {ingredientLisstItems}
-            </ul>
+            {ingredients.length < 0 &&   <section>
+                <h2>Ingredients on hand:</h2>
+                <ul>
+                {ingredientListItems}
+                </ul>
+                <div>
+                    <div>
+                        <h3>Ready for a recip?</h3>
+                        <p>Generate o recipe from your list of ingredients.</p>
+                    </div>
+                    <button>Get a recipe</button>
+                </div>
+            </section>}
+            
         </main>
     )
 }
